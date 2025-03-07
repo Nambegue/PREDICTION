@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prédiction de matchs de football</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Intégration de Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Prédiction de matchs de football</h1>
+    <div class="container">
+        <label for="team1">Équipe 1 :</label>
+        <input type="text" id="team1" placeholder="Entrez le nom de l'équipe 1">
+        
+        <label for="team2">Équipe 2 :</label>
+        <input type="text" id="team2" placeholder="Entrez le nom de l'équipe 2">
+        
+        <button onclick="predictMatch()">Prédire le résultat</button>
+        
+        <div class="result" id="result">
+            <!-- Résultat de la prédiction -->
+        </div>
+
+        <!-- Graphiques -->
+        <div class="charts">
+            <canvas id="team1Chart"></canvas>
+            <canvas id="team2Chart"></canvas>
+            <canvas id="headToHeadChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
